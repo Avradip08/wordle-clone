@@ -6,7 +6,7 @@ import GameStatus from "./GameStatus";
 
 const InputForms = () => {
 
-    const [wordToday,setWordToday] = useState(chooseRandomWord())
+    const [wordToday,setWordToday] = useState("hello")
 
     const [gameState,setGameState] = useState([
         0,-1,-1,-1,-1,-1
@@ -284,7 +284,7 @@ const InputForms = () => {
                     gameWon && 
                     <div className="flex justify-center my-2">
                         
-                            <h1 className="font-extrabold text-2xl text-green-600 shadow-green-400">You Win</h1>
+                            <h1 className="font-extrabold text-2xl text-green-600 shadow-green-400">You Guessed in {gameStage+1} tries</h1>
                         
                     </div>
                 }
