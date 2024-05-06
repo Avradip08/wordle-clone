@@ -6,7 +6,7 @@ import GameStatus from "./GameStatus";
 
 const InputForms = () => {
 
-    const [wordToday,setWordToday] = useState("hello")
+    const [wordToday,setWordToday] = useState(chooseRandomWord())
 
     const [gameState,setGameState] = useState([
         0,-1,-1,-1,-1,-1
